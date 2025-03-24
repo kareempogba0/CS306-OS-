@@ -16,14 +16,14 @@ org 100h
 ;l1:        
 ;    mov dl, data[si]
 ;    cmp dl, max   
-;    jg a ; for unsigned and for signed use ja
+;    jg a ; for signed and for unsigned use ja
 ;    jmp skip
 ;    a:
 ;        mov max, dl
 ;    
 ;    skip:
 ;        cmp dl, min
-;        jl b ; dl < min for unsigned and for signed use jb
+;        jl b ; dl < min for signed and for unsigned use jb
 ;        jmp break
 ;    
 ;    b:
